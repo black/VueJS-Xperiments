@@ -1,0 +1,75 @@
+{
+    "accent": "UK English Male",
+    "assistant": "google",
+    "language": "english",
+    "keyboard": "t9-predictive",
+    "theme": "light",
+    "radarspeed": {
+        "basic": {
+            "scan": "2",
+            "rotate": "1"
+        },
+        "intermediate": {
+            "scan": "2",
+            "rotate": "1"
+        },
+        "complete": {
+            "scan": "2",
+            "rotate": "1"
+        }
+    },
+    "blinkstrength": {
+        "basic": "23",
+        "intermediate": "137",
+        "complete": "40"
+    },
+    "subscriptions": {
+        "ai": true,
+        "netflix": true,
+        "roku": false,
+        "spotify": false,
+        "news": true
+    },
+    "emergency": {
+        "sender": {
+            "number": "1289-270-0989",
+            "message": "I am in pain"
+        },
+        "phone": [
+            {
+                "name": "Francois Gand",
+                "number": "12265005320"
+            },
+            {
+                "name": "Abhinav One",
+                "number": "919206694797"
+            },
+            {
+                "name": "Abhinav Two",
+                "number": "917411603497"
+            },
+            {
+                "name": "Abhinav Three",
+                "number": "919206694700"
+            }
+        ],
+        "email": [
+            {
+                "name": "Francois",
+                "mail": "francois@nuro.ca"
+            },
+            {
+                "name": "Abhinav",
+                "mail": "abhinav@nuro.ca"
+            },
+            {
+                "name": "Abhinav",
+                "mail": "imxgod@gmail.com"
+            },
+            {
+                "name": "Abhinav",
+                "mail": "imxgod@gmail.com"
+            }
+        ]
+    }
+}

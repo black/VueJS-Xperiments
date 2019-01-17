@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>VueJS + VueX</title>
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div id="app">
+        <h2>{{welcome}}</h2>
+        <h4>{{setMessage}}</h4>
+        <h4>{{getCount}}</h4>
+        <button v-on:click="incrementAction">COUNTER</button> 
+        <ul>
+            <child-one></child-one>
+            <child-two></child-two>
+        </ul>
+    </div>
+    <!-- Parent template -->
+    <script type="text/x-template" id="parent">
+        <div>
+            <h2>PARENT</h2>
+            <child-one></child-one> 
+        </div> 
+    </script>
+
+    <!-- child one template -->
+    <script type="text/x-template" id="child-one">
+        <li>
+            <h2>CHILD ONE</h2>
+            <span>NAME: {{settingValues.data1 || null}}</span> <br>
+            <span>AGE: {{settingValues.data2  || null}}</span> <br>
+            <span>STATUS: {{getStatus}}</span> <br>
+            <button v-on:click="statusMutate()">UPDATE STATUS</button>
+        </li> 
+    </script>
+    <!-- child two template -->
+    <script type="text/x-template" id="child-two">
+        <li>
+            <h2>CHILD TWO</h2>
+            <span>NAME: {{settingValues.data3 || null}}</span><br>
+            <span>GENDER: {{settingValues.data4 || null}}</span> <br>
+            <span>STATUS: {{getStatus}}</span> <br>
+            <button v-on:click="statusMutate()">UPDATE STATUS</button>
+        </li> 
+</script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.21/vue.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/vuex/3.0.1/vuex.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+    <script src="js/app.js"></script>
+</body>
+
+</html>

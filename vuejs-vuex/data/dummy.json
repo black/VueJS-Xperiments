@@ -1,0 +1,10 @@
+{
+    "data1":"XOXOXOXOX",
+    "data2":["14","22","18","20","55","89"],
+    "data3":{
+        "subdata31":"YOYOYOY",
+        "subdata32":"POPOPOP",
+        "subdata33":"HYHYHYHY",
+    },
+    "data4":false
+}
